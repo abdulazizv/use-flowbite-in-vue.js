@@ -1,3 +1,8 @@
-import { createStore } from "vuex";
+import {createStore} from "vuex";
 import count from "../modules/count";
-export const store = createStore({ modules: { count } });
+import { getpost } from "../modules/post/getpost";
+import toast from '../modules/toast/toast';
+
+export const store = createStore({modules: {
+      count , getpost , toast
+    }})
