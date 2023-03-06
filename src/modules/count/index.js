@@ -18,6 +18,9 @@ const count = {
     getters:{
         doubleCount(state) {
             state.number += 100;
+        },
+        resetCount(state) {
+            state.number = 0
         }
     }
 
